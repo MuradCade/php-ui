@@ -1,0 +1,39 @@
+/* Card container */
+.ui-card {
+    background-color: var(--ui-color-background);
+    border: 1px solid var(--ui-color-border);
+    border-radius: var(--ui-radius-lg);
+    box-shadow: var(--ui-shadow-sm);
+    overflow: hidden;
+}
+
+/* Card sections */
+.ui-card-header {
+    padding: var(--ui-space-4);
+    border-bottom: 1px solid var(--ui-color-border);
+}
+
+.ui-card-body {
+    padding: var(--ui-space-4);
+}
+
+.ui-card-footer {
+    padding: var(--ui-space-4);
+    border-top: 1px solid var(--ui-color-border);
+    background-color: var(--ui-color-background-muted);
+}
+
+/* Card title */
+.ui-card-title {
+    margin: 0;
+    font-size: var(--ui-font-size-lg);
+    font-weight: 600;
+    color: var(--ui-color-text);
+}
+
+/* Card description */
+.ui-card-description {
+    margin: var(--ui-space-2) 0 0;
+    color: var(--ui-color-text-muted);
+    font-size: var(--ui-font-size-sm);
+}
