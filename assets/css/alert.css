@@ -1,0 +1,36 @@
+/* Base alert */
+.ui-alert {
+    padding: var(--ui-space-4);
+    border: 1px solid transparent;
+    border-radius: var(--ui-radius-md);
+    margin-bottom: var(--ui-space-4);
+    font-size: var(--ui-font-size-sm);
+}
+
+/* Success */
+.ui-alert-success {
+    color: #166534;
+    background-color: #f0fdf4;
+    border-color: #bbf7d0;
+}
+
+/* Danger */
+.ui-alert-danger {
+    color: #991b1b;
+    background-color: #fef2f2;
+    border-color: #fecaca;
+}
+
+/* Warning */
+.ui-alert-warning {
+    color: #92400e;
+    background-color: #fffbeb;
+    border-color: #fde68a;
+}
+
+/* Info */
+.ui-alert-info {
+    color: #155e75;
+    background-color: #ecfeff;
+    border-color: #a5f3fc;
+}
