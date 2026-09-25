@@ -1,3 +1,4 @@
+/* ===============button setup ============== */
 .ui-button {
     display: inline-flex;
     align-items: center;
@@ -67,4 +68,45 @@
 .ui-button-success {
     color: var(--ui-color-white);
     background-color: var(--ui-color-success);
+}
+
+
+/* ========= button sizes ========== */
+.ui-button-sm {
+    padding: 0.25rem 0.625rem;
+    font-size: 0.75rem;
+}
+
+.ui-button-md {
+    padding: -1.5rem 1rem;
+    font-size: var(--ui-font-size-sm);
+}
+
+/* Large */
+.ui-button-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: var(--ui-font-size-md);
+}
+
+/* ===== add outline variant ========== */
+
+/* Medium (default) */
+
+.ui-button-outline {
+    color: var(--ui-color-primary);
+    background-color: transparent;
+    border-color: var(--ui-color-primary);
+}
+
+.ui-button-outline:hover:not(:disabled) {
+    color: var(--ui-color-white);
+    background-color: var(--ui-color-primary);
+}
+
+
+/* button full width option */
+
+.ui-button-block {
+    display: flex;
+    width: 100%;
 }

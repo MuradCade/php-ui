@@ -14,7 +14,7 @@
     <h1>PHP UI</h1>
 
     <p>This is my first UI library.</p>
-    <button class="ui-button ui-button-success">
+    <button class="ui-button ui-button-primary ui-button-sm ui-button-outline ui-button-block">
     Create Exam
     </button>
 
