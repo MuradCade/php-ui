@@ -1,0 +1,16 @@
+{
+    "name": "muradcade/php-ui",
+    "description": "A clean, HTML-first UI library for PHP applications",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Murad Cade"
+        }
+    ],
+    "minimum-stability": "stable",
+
+    "require": {
+      "php": "^8.1"
+    }
+}
