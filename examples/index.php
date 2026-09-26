@@ -32,83 +32,97 @@
     <link rel="stylesheet" href="../assets/css/progress.css">
     <link rel="stylesheet" href="../assets/css/empty-state.css">
     <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/sidebar.css">
 </head>
 
 <body>
+    <div
+        class="ui-sidebar-overlay"
+        data-ui-sidebar-overlay></div>
+    <button
+        type="button"
+        class="ui-sidebar-toggle"
+        data-ui-sidebar-toggle
+        aria-label="Open navigation">
+        ☰
+    </button>
 
-    <h1>PHP UI</h1>
-
-    <p>This is my first UI library.</p>
-
-    <nav class="ui-navbar">
+    <aside class="ui-sidebar">
 
         <a
             href="#"
-            class="ui-navbar-brand">
+            class="ui-sidebar-brand">
             PHP UI
         </a>
 
-        <button
-            type="button"
-            class="ui-navbar-toggle"
-            data-ui-navbar-toggle
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            ☰
-        </button>
+        <nav class="ui-sidebar-nav">
 
-        <ul class="ui-navbar-nav">
+            <a
+                href="#"
+                class="ui-sidebar-link ui-sidebar-link-active">
+                Dashboard
+            </a>
 
-            <li>
+            <a
+                href="#"
+                class="ui-sidebar-link">
+                Exams
+            </a>
+
+            <a
+                href="#"
+                class="ui-sidebar-link">
+                Users
+            </a>
+
+        </nav>
+
+        <div class="ui-sidebar-section">
+
+            <h2 class="ui-sidebar-section-title">
+                Management
+            </h2>
+
+            <nav class="ui-sidebar-nav">
+
                 <a
                     href="#"
-                    class="ui-navbar-link ui-navbar-link-active">
-                    Dashboard
+                    class="ui-sidebar-link">
+                    Questions
                 </a>
-            </li>
 
-            <li>
                 <a
                     href="#"
-                    class="ui-navbar-link">
-                    Exams
+                    class="ui-sidebar-link">
+                    Reports
                 </a>
-            </li>
 
-            <li>
                 <a
                     href="#"
-                    class="ui-navbar-link">
-                    Users
-                </a>
-            </li>
-
-            <li>
-                <a
-                    href="#"
-                    class="ui-navbar-link">
+                    class="ui-sidebar-link">
                     Settings
                 </a>
-            </li>
 
-        </ul>
-
-        <div class="ui-navbar-actions">
-
-            <button class="ui-button ui-button-primary ui-button-sm">
-                Login
-            </button>
+            </nav>
 
         </div>
+    </aside>
 
-    </nav>
+    <main class="ui-sidebar-content">
 
+
+        <h1>PHP UI</h1>
+
+        <p>This is my first UI library.</p>
+
+    </main>
 
     <script src="../assets/js/modal.js"></script>
     <script src="../assets/js/dropdown.js"></script>
     <script src="../assets/js/toast.js"></script>
     <script src="../assets/js/tabs.js"></script>
     <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/sidebar.js"></script>
 </body>
 
 </html>
