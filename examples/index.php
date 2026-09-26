@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../assets/css/button.css">
     <link rel="stylesheet" href="../assets/css/card.css">
     <link rel="stylesheet" href="../assets/css/alert.css">
+    <link rel="stylesheet" href="../assets/css/badge.css">
 </head>
 
 <body>
@@ -18,21 +19,8 @@
     <h1>PHP UI</h1>
 
     <p>This is my first UI library.</p>
-    <div class="ui-alert ui-alert-success" role="status">
-        Exam created successfully!
-    </div>
 
-    <div class="ui-alert ui-alert-danger" role="alert">
-        Something went wrong. Please try again.
-    </div>
-
-    <div class="ui-alert ui-alert-warning" role="status">
-        Your exam has not been published yet.
-    </div>
-
-    <div class="ui-alert ui-alert-info" role="status">
-        You have 3 upcoming exams.
-    </div>
+    <p class='ui-badge ui-badge-info'>b</p>
 
 
 </body>
