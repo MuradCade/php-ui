@@ -1,0 +1,58 @@
+.ui-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ui-space-2);
+}
+
+.ui-accordion-item {
+    border: 1px solid var(--ui-color-border);
+    border-radius: var(--ui-radius-md);
+    background: var(--ui-color-background);
+}
+
+.ui-accordion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: var(--ui-space-4);
+
+    color: var(--ui-color-text);
+
+    font-size: var(--ui-font-size-sm);
+    font-weight: 500;
+
+    cursor: pointer;
+    list-style: none;
+}
+
+.ui-accordion-header::-webkit-details-marker {
+    display: none;
+}
+
+.ui-accordion-header::after {
+    content: "+";
+
+    font-size: 1.25rem;
+    color: var(--ui-color-text-muted);
+}
+
+.ui-accordion-item[open] .ui-accordion-header::after {
+    content: "−";
+}
+
+.ui-accordion-header:hover {
+    background-color: var(--ui-color-background-muted);
+}
+
+.ui-accordion-header:focus-visible {
+    outline: 2px solid var(--ui-color-primary);
+    outline-offset: -2px;
+}
+
+.ui-accordion-content {
+    padding: 0 var(--ui-space-4) var(--ui-space-4);
+
+    color: var(--ui-color-text-muted);
+    font-size: var(--ui-font-size-sm);
+}

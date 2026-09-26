@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="../assets/css/dropdown.css">
     <link rel="stylesheet" href="../assets/css/toast.css">
     <link rel="stylesheet" href="../assets/css/tabs.css">
+    <link rel="stylesheet" href="../assets/css/accordion.css">
 </head>
 
 <body>
@@ -30,67 +31,49 @@
     <h1>PHP UI</h1>
 
     <p>This is my first UI library.</p>
+    <div class="ui-accordion">
 
-    <div class="ui-tabs">
+        <details class="ui-accordion-item" open>
 
-        <div
-            class="ui-tabs-list"
-            role="tablist">
-
-            <button
-                type="button"
-                class="ui-tab ui-tab-active"
-                data-ui-tab="general-panel"
-                role="tab"
-                aria-selected="true">
+            <summary class="ui-accordion-header">
                 General
-            </button>
+            </summary>
 
-            <button
-                type="button"
-                class="ui-tab"
-                data-ui-tab="questions-panel"
-                role="tab"
-                aria-selected="false">
+            <div class="ui-accordion-content">
+                <p>
+                    Configure the exam title, duration and status.
+                </p>
+            </div>
+
+        </details>
+
+        <details class="ui-accordion-item">
+
+            <summary class="ui-accordion-header">
                 Questions
-            </button>
+            </summary>
 
-            <button
-                type="button"
-                class="ui-tab"
-                data-ui-tab="participants-panel"
-                role="tab"
-                aria-selected="false">
+            <div class="ui-accordion-content">
+                <p>
+                    Add and manage questions for this exam.
+                </p>
+            </div>
+
+        </details>
+
+        <details class="ui-accordion-item">
+
+            <summary class="ui-accordion-header">
                 Participants
-            </button>
+            </summary>
 
-        </div>
+            <div class="ui-accordion-content">
+                <p>
+                    Manage the participants who can take the exam.
+                </p>
+            </div>
 
-        <div
-            id="general-panel"
-            class="ui-tab-panel"
-            role="tabpanel">
-            <h3>General</h3>
-            <p>Exam title, duration and status.</p>
-        </div>
-
-        <div
-            id="questions-panel"
-            class="ui-tab-panel"
-            role="tabpanel"
-            hidden>
-            <h3>Questions</h3>
-            <p>Manage exam questions.</p>
-        </div>
-
-        <div
-            id="participants-panel"
-            class="ui-tab-panel"
-            role="tabpanel"
-            hidden>
-            <h3>Participants</h3>
-            <p>Manage exam participants.</p>
-        </div>
+        </details>
 
     </div>
 
