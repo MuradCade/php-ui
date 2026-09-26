@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../assets/css/radio.css">
     <link rel="stylesheet" href="../assets/css/switch.css">
     <link rel="stylesheet" href="../assets/css/form.css">
+    <link rel="stylesheet" href="../assets/css/modal.css">
 </head>
 
 <body>
@@ -26,85 +27,58 @@
     <h1>PHP UI</h1>
 
     <p>This is my first UI library.</p>
-    <form class="ui-form" action="#" method="post">
+    <button
+        class="ui-button ui-button-primary"
+        data-ui-modal-open="exam-modal">
+        Create Exam
+    </button>
 
-        <div class="ui-form-section">
-            <div>
-                <h2 class="ui-form-section-title">Create Exam</h2>
-                <p class="ui-form-section-description">
-                    Enter the details of your new exam.
-                </p>
-            </div>
+    <dialog class="ui-modal" id="exam-modal">
 
-            <div class="ui-form-group">
-                <label class="ui-label" for="title">
-                    Exam Title
-                </label>
+        <div class="ui-modal-header">
+            <h2 class="ui-modal-title">Create Exam</h2>
 
-                <input
-                    class="ui-input"
-                    type="text"
-                    id="title"
-                    name="title"
-                    placeholder="Enter exam title"
-                    required>
-            </div>
+            <button
+                type="button"
+                class="ui-modal-close"
+                data-ui-modal-close
+                aria-label="Close dialog">
+                &times;
+            </button>
+        </div>
 
-            <div class="ui-form-group">
-                <label class="ui-label" for="description">
-                    Description
-                </label>
+        <div class="ui-modal-body">
+            <p>Enter the details of your new exam.</p>
 
-                <textarea
-                    class="ui-textarea"
-                    id="description"
-                    name="description"
-                    placeholder="Enter exam description"></textarea>
-            </div>
-
-            <div class="ui-form-group">
-                <label class="ui-label" for="status">
-                    Exam Status
-                </label>
-
-                <select class="ui-select" id="status" name="status" required>
-                    <option value="">Select a status</option>
-                    <option value="published">Published</option>
-                    <option value="unpublished">Unpublished</option>
-                    <option value="disabled">Disabled</option>
-                </select>
-            </div>
-
-            <label class="ui-switch-wrapper">
-                <input
-                    type="checkbox"
-                    class="ui-switch"
-                    name="enable_timer"
-                    value="1"
-                    role="switch">
-
-                <span class="ui-switch-label">
-                    Enable exam timer
-                </span>
+            <label class="ui-label" for="modal-exam-title">
+                Exam Title
             </label>
+
+            <input
+                class="ui-input"
+                type="text"
+                id="modal-exam-title"
+                placeholder="Enter exam title">
         </div>
 
-        <div class="ui-form-actions">
+        <div class="ui-modal-footer">
             <button
-                type="reset"
-                class="ui-button ui-button-secondary">
-                Reset
+                type="button"
+                class="ui-button ui-button-secondary"
+                data-ui-modal-close>
+                Cancel
             </button>
 
             <button
-                type="submit"
+                type="button"
                 class="ui-button ui-button-primary">
-                Create Exam
+                Save Exam
             </button>
         </div>
 
-    </form>
+    </dialog>
 
+    <script src="../assets/js/modal.js"></script>
 </body>
 
 </html>
