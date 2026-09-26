@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="../assets/css/switch.css">
     <link rel="stylesheet" href="../assets/css/form.css">
     <link rel="stylesheet" href="../assets/css/modal.css">
+    <link rel="stylesheet" href="../assets/css/dropdown.css">
 </head>
 
 <body>
@@ -27,58 +28,43 @@
     <h1>PHP UI</h1>
 
     <p>This is my first UI library.</p>
-    <button
-        class="ui-button ui-button-primary"
-        data-ui-modal-open="exam-modal">
-        Create Exam
-    </button>
 
-    <dialog class="ui-modal" id="exam-modal">
+    <div>
+        <div class="ui-dropdown">
 
-        <div class="ui-modal-header">
-            <h2 class="ui-modal-title">Create Exam</h2>
-
-            <button
-                type="button"
-                class="ui-modal-close"
-                data-ui-modal-close
-                aria-label="Close dialog">
-                &times;
-            </button>
-        </div>
-
-        <div class="ui-modal-body">
-            <p>Enter the details of your new exam.</p>
-
-            <label class="ui-label" for="modal-exam-title">
-                Exam Title
-            </label>
-
-            <input
-                class="ui-input"
-                type="text"
-                id="modal-exam-title"
-                placeholder="Enter exam title">
-        </div>
-
-        <div class="ui-modal-footer">
             <button
                 type="button"
                 class="ui-button ui-button-secondary"
-                data-ui-modal-close>
-                Cancel
+                data-ui-dropdown-toggle
+                aria-expanded="false">
+                Actions
             </button>
 
-            <button
-                type="button"
-                class="ui-button ui-button-primary">
-                Save Exam
-            </button>
+            <div class="ui-dropdown-menu" hidden>
+
+                <a href="#" class="ui-dropdown-item">
+                    View
+                </a>
+
+                <a href="#" class="ui-dropdown-item">
+                    Edit
+                </a>
+
+                <div class="ui-dropdown-divider"></div>
+
+                <button
+                    type="button"
+                    class="ui-dropdown-item ui-dropdown-item-danger">
+                    Delete
+                </button>
+
+            </div>
+
         </div>
-
-    </dialog>
+    </div>
 
     <script src="../assets/js/modal.js"></script>
+    <script src="../assets/js/dropdown.js"></script>
 </body>
 
 </html>
