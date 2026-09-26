@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     gap: var(--ui-space-1);
-
     margin-top: var(--ui-space-4);
 }
 
@@ -65,4 +64,10 @@
     color: var(--ui-color-text-muted);
 
     font-size: var(--ui-font-size-sm);
+}
+
+@media (max-width: 576px) {
+    .ui-pagination {
+        flex-wrap: wrap;
+    }
 }

@@ -37,45 +37,18 @@
 </head>
 
 <body>
-    <nav class="ui-breadcrumb" aria-label="Breadcrumb">
-        <ol class="ui-breadcrumb-list">
-            <li class="ui-breadcrumb-item">
-                <a href="#" class="ui-breadcrumb-link">
-                    Dashboard
-                </a>
-
-                <span class="ui-breadcrumb-separator" aria-hidden="true">
-                    /
-                </span>
-            </li>
-
-            <li class="ui-breadcrumb-item">
-                <a href="#" class="ui-breadcrumb-link">
-                    Exams
-                </a>
-
-                <span class="ui-breadcrumb-separator" aria-hidden="true">
-                    /
-                </span>
-            </li>
-
-            <li
-                class="ui-breadcrumb-item ui-breadcrumb-current"
-                aria-current="page">
-                Create Exam
-            </li>
-        </ol>
-    </nav>
-
-    <main class="ui-sidebar-content">
 
 
-        <h1>PHP UI</h1>
 
-        <p>This is my first UI library.</p>
+    <h1>PHP UI</h1>
 
-    </main>
+    <p>This is my first UI library.</p>
 
+    <div class="ui-table-wrapper">
+        <table class="ui-table">
+            ...
+        </table>
+    </div>
     <script src="../assets/js/modal.js"></script>
     <script src="../assets/js/dropdown.js"></script>
     <script src="../assets/js/toast.js"></script>
