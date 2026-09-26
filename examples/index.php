@@ -33,80 +33,39 @@
     <link rel="stylesheet" href="../assets/css/empty-state.css">
     <link rel="stylesheet" href="../assets/css/navbar.css">
     <link rel="stylesheet" href="../assets/css/sidebar.css">
+    <link rel="stylesheet" href="../assets/css/breadcrumb.css">
 </head>
 
 <body>
-    <div
-        class="ui-sidebar-overlay"
-        data-ui-sidebar-overlay></div>
-    <button
-        type="button"
-        class="ui-sidebar-toggle"
-        data-ui-sidebar-toggle
-        aria-label="Open navigation">
-        ☰
-    </button>
-
-    <aside class="ui-sidebar">
-
-        <a
-            href="#"
-            class="ui-sidebar-brand">
-            PHP UI
-        </a>
-
-        <nav class="ui-sidebar-nav">
-
-            <a
-                href="#"
-                class="ui-sidebar-link ui-sidebar-link-active">
-                Dashboard
-            </a>
-
-            <a
-                href="#"
-                class="ui-sidebar-link">
-                Exams
-            </a>
-
-            <a
-                href="#"
-                class="ui-sidebar-link">
-                Users
-            </a>
-
-        </nav>
-
-        <div class="ui-sidebar-section">
-
-            <h2 class="ui-sidebar-section-title">
-                Management
-            </h2>
-
-            <nav class="ui-sidebar-nav">
-
-                <a
-                    href="#"
-                    class="ui-sidebar-link">
-                    Questions
+    <nav class="ui-breadcrumb" aria-label="Breadcrumb">
+        <ol class="ui-breadcrumb-list">
+            <li class="ui-breadcrumb-item">
+                <a href="#" class="ui-breadcrumb-link">
+                    Dashboard
                 </a>
 
-                <a
-                    href="#"
-                    class="ui-sidebar-link">
-                    Reports
+                <span class="ui-breadcrumb-separator" aria-hidden="true">
+                    /
+                </span>
+            </li>
+
+            <li class="ui-breadcrumb-item">
+                <a href="#" class="ui-breadcrumb-link">
+                    Exams
                 </a>
 
-                <a
-                    href="#"
-                    class="ui-sidebar-link">
-                    Settings
-                </a>
+                <span class="ui-breadcrumb-separator" aria-hidden="true">
+                    /
+                </span>
+            </li>
 
-            </nav>
-
-        </div>
-    </aside>
+            <li
+                class="ui-breadcrumb-item ui-breadcrumb-current"
+                aria-current="page">
+                Create Exam
+            </li>
+        </ol>
+    </nav>
 
     <main class="ui-sidebar-content">
 
