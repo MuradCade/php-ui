@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="../assets/css/form.css">
     <link rel="stylesheet" href="../assets/css/modal.css">
     <link rel="stylesheet" href="../assets/css/dropdown.css">
+    <link rel="stylesheet" href="../assets/css/toast.css">
 </head>
 
 <body>
@@ -29,42 +30,33 @@
 
     <p>This is my first UI library.</p>
 
-    <div>
-        <div class="ui-dropdown">
+    <button
+        class="ui-button ui-button-success"
+        onclick="uiToast('Exam created successfully.', 'success', 'Success')">
+        Success
+    </button>
 
-            <button
-                type="button"
-                class="ui-button ui-button-secondary"
-                data-ui-dropdown-toggle
-                aria-expanded="false">
-                Actions
-            </button>
+    <button
+        class="ui-button ui-button-danger"
+        onclick="uiToast('Unable to create exam.', 'danger', 'Error')">
+        Danger
+    </button>
 
-            <div class="ui-dropdown-menu" hidden>
+    <button
+        class="ui-button ui-button-primary"
+        onclick="uiToast('Your exam is being processed.', 'info', 'Information')">
+        Info
+    </button>
 
-                <a href="#" class="ui-dropdown-item">
-                    View
-                </a>
-
-                <a href="#" class="ui-dropdown-item">
-                    Edit
-                </a>
-
-                <div class="ui-dropdown-divider"></div>
-
-                <button
-                    type="button"
-                    class="ui-dropdown-item ui-dropdown-item-danger">
-                    Delete
-                </button>
-
-            </div>
-
-        </div>
-    </div>
+    <button
+        class="ui-button ui-button-secondary"
+        onclick="uiToast('Please check your information.', 'warning', 'Warning')">
+        Warning
+    </button>
 
     <script src="../assets/js/modal.js"></script>
     <script src="../assets/js/dropdown.js"></script>
+    <script src="../assets/js/toast.js"></script>
 </body>
 
 </html>

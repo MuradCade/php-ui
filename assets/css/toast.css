@@ -1,0 +1,78 @@
+.ui-toast-container {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1100;
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--ui-space-3);
+
+    width: min(360px, calc(100% - 2rem));
+}
+
+.ui-toast {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--ui-space-3);
+
+    padding: var(--ui-space-4);
+
+    background: var(--ui-color-background);
+    border: 1px solid var(--ui-color-border);
+    border-radius: var(--ui-radius-md);
+
+    box-shadow: var(--ui-shadow-md);
+
+    font-size: var(--ui-font-size-sm);
+}
+
+.ui-toast-success {
+    border-left: 4px solid var(--ui-color-success);
+}
+
+.ui-toast-danger {
+    border-left: 4px solid var(--ui-color-danger);
+}
+
+.ui-toast-warning {
+    border-left: 4px solid var(--ui-color-warning);
+}
+
+.ui-toast-info {
+    border-left: 4px solid var(--ui-color-info);
+}
+
+.ui-toast-content {
+    flex: 1;
+}
+
+.ui-toast-title {
+    margin: 0 0 var(--ui-space-1);
+
+    font-weight: 600;
+    color: var(--ui-color-text);
+}
+
+.ui-toast-message {
+    margin: 0;
+    color: var(--ui-color-text-muted);
+}
+
+.ui-toast-close {
+    border: 0;
+    padding: 0;
+
+    background: transparent;
+    color: var(--ui-color-text-muted);
+
+    font-size: 1.25rem;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+.ui-toast-close:hover {
+    color: var(--ui-color-text);
+}
