@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="../assets/css/accordion.css">
     <link rel="stylesheet" href="../assets/css/tooltip.css">
     <link rel="stylesheet" href="../assets/css/table.css">
+    <link rel="stylesheet" href="../assets/css/pagination.css">
 </head>
 
 <body>
@@ -82,7 +83,24 @@
             </tbody>
 
         </table>
+        <nav
+            class="ui-pagination"
+            aria-label="Pagination">
 
+            <a
+                href="#"
+                class="ui-pagination-link ui-pagination-link-disabled"
+                aria-disabled="true">
+                Previous
+            </a>
+
+            <a
+                href="?page=2"
+                class="ui-pagination-link">
+                Next
+            </a>
+
+        </nav>
     </div>
 
     <script src="../assets/js/modal.js"></script>
