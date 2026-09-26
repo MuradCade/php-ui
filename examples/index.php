@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../assets/css/input.css">
     <link rel="stylesheet" href="../assets/css/textarea.css">
     <link rel="stylesheet" href="../assets/css/select.css">
+    <link rel="stylesheet" href="../assets/css/checkbox.css">
 </head>
 
 <body>
@@ -22,24 +23,45 @@
     <h1>PHP UI</h1>
 
     <p>This is my first UI library.</p>
-
-    <div style="max-width: 400px;">
-
-        <label class="ui-label" for="exam-status">
-            Exam Status
+    <div>
+        <label class="ui-checkbox-wrapper">
+            <input
+                class="ui-checkbox"
+                type="checkbox"
+                name="settings[]"
+                value="shuffle">
+            <span class="ui-checkbox-label">
+                Shuffle questions
+            </span>
         </label>
+    </div>
 
-        <select class="ui-select ui-select-error" id="exam-status" name="status">
-            <option value="">Select a status</option>
-            <option value="published">Published</option>
-            <option value="unpublished">Unpublished</option>
-            <option value="disabled">Disabled</option>
-        </select>
+    <div>
+        <label class="ui-checkbox-wrapper">
+            <input
+                class="ui-checkbox"
+                type="checkbox"
+                name="settings[]"
+                value="timer"
+                checked>
+            <span class="ui-checkbox-label">
+                Enable exam timer
+            </span>
+        </label>
+    </div>
 
-        <p class="ui-select-error">
-            Choose the current status of the exam.
-        </p>
-
+    <div>
+        <label class="ui-checkbox-wrapper">
+            <input
+                class="ui-checkbox"
+                type="checkbox"
+                name="settings[]"
+                value="results"
+                disabled>
+            <span class="ui-checkbox-label">
+                Show results immediately
+            </span>
+        </label>
     </div>
 
 </body>
