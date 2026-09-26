@@ -108,5 +108,5 @@
 
 .ui-button-block {
     display: flex;
-    width: 100%;
+    width: 100% !important;
 }

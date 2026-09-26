@@ -965,13 +965,8 @@
 
         <!-- Navbar -->
         <section class="ui-example-section">
-            <h2 class="ui-example-section-title">Navbar</h2>
-
             <nav class="ui-navbar">
-
-                <a
-                    href="#"
-                    class="ui-navbar-brand">
+                <a href="#" class="ui-navbar-brand">
                     PHP UI
                 </a>
 
@@ -979,12 +974,12 @@
                     type="button"
                     class="ui-navbar-toggle"
                     data-ui-navbar-toggle
-                    aria-expanded="false">
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
                     ☰
                 </button>
 
-                <ul class="ui-navbar-nav">
-
+                <ul class="ui-navbar-nav ui-navbar-nav-center">
                     <li>
                         <a
                             href="#"
@@ -994,32 +989,25 @@
                     </li>
 
                     <li>
-                        <a
-                            href="#"
-                            class="ui-navbar-link">
+                        <a href="#" class="ui-navbar-link">
                             Components
                         </a>
                     </li>
 
                     <li>
-                        <a
-                            href="#"
-                            class="ui-navbar-link">
+                        <a href="#" class="ui-navbar-link">
                             Documentation
                         </a>
                     </li>
-
                 </ul>
 
                 <div class="ui-navbar-actions">
-
-                    <button class="ui-button ui-button-primary ui-button-sm">
+                    <button class="ui-button ui-button-primary ui-button-block">
                         Login
                     </button>
-
                 </div>
-
             </nav>
+
         </section>
 
 
