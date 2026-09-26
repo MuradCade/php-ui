@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="../assets/css/tooltip.css">
     <link rel="stylesheet" href="../assets/css/table.css">
     <link rel="stylesheet" href="../assets/css/pagination.css">
+    <link rel="stylesheet" href="../assets/css/spinner.css">
 </head>
 
 <body>
@@ -35,73 +36,9 @@
 
     <p>This is my first UI library.</p>
 
-    <div class="ui-table-wrapper">
-
-        <table class="ui-table ui-table-compact ui-table-bordered">
-
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Status</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-
-            <tbody>
-
-                <tr>
-                    <td>1</td>
-                    <td>PHP Basics</td>
-                    <td>
-                        <span class="ui-badge ui-badge-success">
-                            Published
-                        </span>
-                    </td>
-                    <td>
-                        <button class="ui-button ui-button-sm">
-                            Edit
-                        </button>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>2</td>
-                    <td>Laravel Basics</td>
-                    <td>
-                        <span class="ui-badge ui-badge-warning">
-                            Draft
-                        </span>
-                    </td>
-                    <td>
-                        <button class="ui-button ui-button-sm">
-                            Edit
-                        </button>
-                    </td>
-                </tr>
-
-            </tbody>
-
-        </table>
-        <nav
-            class="ui-pagination"
-            aria-label="Pagination">
-
-            <a
-                href="#"
-                class="ui-pagination-link ui-pagination-link-disabled"
-                aria-disabled="true">
-                Previous
-            </a>
-
-            <a
-                href="?page=2"
-                class="ui-pagination-link">
-                Next
-            </a>
-
-        </nav>
-    </div>
+    <span
+        class="ui-spinner"
+        aria-label="Loading"></span>
 
     <script src="../assets/js/modal.js"></script>
     <script src="../assets/js/dropdown.js"></script>
