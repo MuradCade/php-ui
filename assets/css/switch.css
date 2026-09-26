@@ -1,0 +1,74 @@
+/* Switch wrapper */
+.ui-switch-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--ui-space-3);
+    cursor: pointer;
+}
+
+/* Hide the native checkbox visually */
+.ui-switch {
+    appearance: none;
+    position: relative;
+
+    width: 2.5rem;
+    height: 1.375rem;
+
+    margin: 0;
+    border-radius: 999px;
+    border: 0;
+
+    background-color: var(--ui-color-border);
+    cursor: pointer;
+
+    transition: background-color 0.2s ease;
+}
+
+/* Switch thumb */
+.ui-switch::before {
+    content: "";
+    position: absolute;
+
+    width: 1rem;
+    height: 1rem;
+
+    top: 0.1875rem;
+    left: 0.1875rem;
+
+    border-radius: 50%;
+    background-color: var(--ui-color-white);
+
+    transition: transform 0.2s ease;
+}
+
+/* Checked state */
+.ui-switch:checked {
+    background-color: var(--ui-color-primary);
+}
+
+.ui-switch:checked::before {
+    transform: translateX(1.125rem);
+}
+
+/* Focus */
+.ui-switch:focus-visible {
+    outline: 2px solid var(--ui-color-primary);
+    outline-offset: 3px;
+}
+
+/* Disabled */
+.ui-switch:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Label */
+.ui-switch-label {
+    font-size: var(--ui-font-size-sm);
+    color: var(--ui-color-text);
+    cursor: pointer;
+}
+
+.ui-switch:disabled + .ui-switch-label {
+    cursor: not-allowed;
+}
