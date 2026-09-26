@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../assets/css/alert.css">
     <link rel="stylesheet" href="../assets/css/badge.css">
     <link rel="stylesheet" href="../assets/css/input.css">
+    <link rel="stylesheet" href="../assets/css/textarea.css">
 </head>
 
 <body>
@@ -20,69 +21,24 @@
     <h1>PHP UI</h1>
 
     <p>This is my first UI library.</p>
-
     <div style="max-width: 400px;">
 
-        <!-- Text input -->
-        <div style="margin-bottom: 1rem;">
-            <label class="ui-label" for="exam-title">
-                Exam Title
-            </label>
+        <label class="ui-label" for="exam-description">
+            Exam Description
+        </label>
 
-            <input
-                class="ui-input"
-                type="text"
-                id="exam-title"
-                placeholder="Enter exam title" />
-        </div>
+        <textarea
+            class="ui-textarea ui-textarea:disabled"
+            id="exam-description"
+            rows="4"
+            placeholder="Enter exam instructions..."></textarea>
 
-        <!-- Email input -->
-        <div style="margin-bottom: 1rem;">
-            <label class="ui-label" for="email">
-                Email Address
-            </label>
-
-            <input
-                class="ui-input"
-                type="email"
-                id="email"
-                placeholder="Enter your email" />
-        </div>
-
-        <!-- Error input -->
-        <div style="margin-bottom: 1rem;">
-            <label class="ui-label" for="invalid-title">
-                Exam Title
-            </label>
-
-            <input
-                class="ui-input ui-input-error"
-                type="text"
-                id="invalid-title"
-                aria-invalid="true"
-                aria-describedby="title-error"
-                value="" />
-
-            <span class="ui-error-message" id="title-error">
-                Exam title is required.
-            </span>
-        </div>
-
-        <!-- Disabled input -->
-        <div>
-            <label class="ui-label" for="disabled-field">
-                Disabled Field
-            </label>
-
-            <input
-                class="ui-input"
-                type="text"
-                id="disabled-field"
-                value="This field is disabled"
-                disabled />
-        </div>
+        <small class="ui-help">
+            Provide a short description of the exam.
+        </small>
 
     </div>
+
 </body>
 
 </html>
