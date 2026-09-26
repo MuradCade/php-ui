@@ -1,5 +1,31 @@
+@import url("button.css");
+@import url("badge.css");
+@import url("alert.css");
+@import url("card.css");
+@import url("input.css");
+@import url("textarea.css");
+@import url("select.css");
+@import url("checkbox.css");
+@import url("radio.css");
+@import url("switch.css");
+@import url("form.css");
+@import url("modal.css");
+@import url("dropdown.css");
+@import url("toast.css");
+@import url("tabs.css");
+@import url("accordion.css");
+@import url("tooltip.css");
+@import url("table.css");
+@import url("pagination.css");
+@import url("spinner.css");
+@import url("skeleton.css");
+@import url("progress.css");
+@import url("empty-state.css");
+@import url("navbar.css");
+@import url("sidebar.css");
+@import url("breadcrumb.css");
+
 :root {
-    /* Colors */
     --ui-color-primary: #2563eb;
     --ui-color-primary-hover: #1d4ed8;
 
@@ -21,7 +47,6 @@
     --ui-color-background: #ffffff;
     --ui-color-background-muted: #f8fafc;
 
-    /* Spacing */
     --ui-space-1: 0.25rem;
     --ui-space-2: 0.5rem;
     --ui-space-3: 0.75rem;
@@ -30,13 +55,11 @@
     --ui-space-6: 1.5rem;
     --ui-space-8: 2rem;
 
-    /* Border radius */
     --ui-radius-sm: 0.25rem;
     --ui-radius-md: 0.375rem;
     --ui-radius-lg: 0.5rem;
     --ui-radius-xl: 0.75rem;
 
-    /* Typography */
     --ui-font-family:
         Inter,
         system-ui,
@@ -49,7 +72,6 @@
     --ui-font-size-md: 1rem;
     --ui-font-size-lg: 1.125rem;
 
-    /* Shadows */
     --ui-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.05);
     --ui-shadow-md: 0 4px 6px rgb(0 0 0 / 0.1);
 }

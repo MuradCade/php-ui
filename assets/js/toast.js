@@ -41,3 +41,5 @@ function uiToast(message, type = "info", title = "") {
         toast.remove();
     }, 4000);
 }
+
+window.uiToast = uiToast;

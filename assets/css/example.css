@@ -1,0 +1,20 @@
+.ui-example {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.ui-example-section {
+    margin-top: 3rem;
+}
+
+.ui-example-section-title {
+    margin-bottom: 1rem;
+}
+
+.ui-example-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
