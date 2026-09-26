@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../assets/css/badge.css">
     <link rel="stylesheet" href="../assets/css/input.css">
     <link rel="stylesheet" href="../assets/css/textarea.css">
+    <link rel="stylesheet" href="../assets/css/select.css">
 </head>
 
 <body>
@@ -21,21 +22,23 @@
     <h1>PHP UI</h1>
 
     <p>This is my first UI library.</p>
+
     <div style="max-width: 400px;">
 
-        <label class="ui-label" for="exam-description">
-            Exam Description
+        <label class="ui-label" for="exam-status">
+            Exam Status
         </label>
 
-        <textarea
-            class="ui-textarea ui-textarea:disabled"
-            id="exam-description"
-            rows="4"
-            placeholder="Enter exam instructions..."></textarea>
+        <select class="ui-select ui-select-error" id="exam-status" name="status">
+            <option value="">Select a status</option>
+            <option value="published">Published</option>
+            <option value="unpublished">Unpublished</option>
+            <option value="disabled">Disabled</option>
+        </select>
 
-        <small class="ui-help">
-            Provide a short description of the exam.
-        </small>
+        <p class="ui-select-error">
+            Choose the current status of the exam.
+        </p>
 
     </div>
 

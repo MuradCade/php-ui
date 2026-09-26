@@ -1,0 +1,50 @@
+/* Base select */
+.ui-select {
+    display: block;
+    width: 100%;
+
+    padding: 0.625rem 2.5rem 0.625rem 0.75rem;
+
+    border: 1px solid var(--ui-color-border);
+    border-radius: var(--ui-radius-md);
+
+    background-color: var(--ui-color-background);
+    color: var(--ui-color-text);
+
+    font-family: inherit;
+    font-size: var(--ui-font-size-sm);
+    line-height: 1.5;
+
+    cursor: pointer;
+
+    appearance: none;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%2364748b' stroke-width='1.5'%3E%3Cpath d='m5 7.5 5 5 5-5'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+}
+
+/* Focus */
+.ui-select:focus {
+    outline: none;
+    border-color: var(--ui-color-primary);
+    box-shadow: 0 0 0 3px rgb(37 99 235 / 15%);
+}
+
+/* Disabled */
+.ui-select:disabled {
+    background-color: var(--ui-color-background-muted);
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Error */
+.ui-select-error {
+    border-color: var(--ui-color-danger);
+}
+
+.ui-select-error:focus {
+    border-color: var(--ui-color-danger);
+    box-shadow: 0 0 0 3px rgb(220 38 38 / 15%);
+}
