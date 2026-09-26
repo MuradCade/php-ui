@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="../assets/css/modal.css">
     <link rel="stylesheet" href="../assets/css/dropdown.css">
     <link rel="stylesheet" href="../assets/css/toast.css">
+    <link rel="stylesheet" href="../assets/css/tabs.css">
 </head>
 
 <body>
@@ -30,33 +31,73 @@
 
     <p>This is my first UI library.</p>
 
-    <button
-        class="ui-button ui-button-success"
-        onclick="uiToast('Exam created successfully.', 'success', 'Success')">
-        Success
-    </button>
+    <div class="ui-tabs">
 
-    <button
-        class="ui-button ui-button-danger"
-        onclick="uiToast('Unable to create exam.', 'danger', 'Error')">
-        Danger
-    </button>
+        <div
+            class="ui-tabs-list"
+            role="tablist">
 
-    <button
-        class="ui-button ui-button-primary"
-        onclick="uiToast('Your exam is being processed.', 'info', 'Information')">
-        Info
-    </button>
+            <button
+                type="button"
+                class="ui-tab ui-tab-active"
+                data-ui-tab="general-panel"
+                role="tab"
+                aria-selected="true">
+                General
+            </button>
 
-    <button
-        class="ui-button ui-button-secondary"
-        onclick="uiToast('Please check your information.', 'warning', 'Warning')">
-        Warning
-    </button>
+            <button
+                type="button"
+                class="ui-tab"
+                data-ui-tab="questions-panel"
+                role="tab"
+                aria-selected="false">
+                Questions
+            </button>
+
+            <button
+                type="button"
+                class="ui-tab"
+                data-ui-tab="participants-panel"
+                role="tab"
+                aria-selected="false">
+                Participants
+            </button>
+
+        </div>
+
+        <div
+            id="general-panel"
+            class="ui-tab-panel"
+            role="tabpanel">
+            <h3>General</h3>
+            <p>Exam title, duration and status.</p>
+        </div>
+
+        <div
+            id="questions-panel"
+            class="ui-tab-panel"
+            role="tabpanel"
+            hidden>
+            <h3>Questions</h3>
+            <p>Manage exam questions.</p>
+        </div>
+
+        <div
+            id="participants-panel"
+            class="ui-tab-panel"
+            role="tabpanel"
+            hidden>
+            <h3>Participants</h3>
+            <p>Manage exam participants.</p>
+        </div>
+
+    </div>
 
     <script src="../assets/js/modal.js"></script>
     <script src="../assets/js/dropdown.js"></script>
     <script src="../assets/js/toast.js"></script>
+    <script src="../assets/js/tabs.js"></script>
 </body>
 
 </html>
