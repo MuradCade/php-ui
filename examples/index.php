@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="../assets/css/skeleton.css">
     <link rel="stylesheet" href="../assets/css/progress.css">
     <link rel="stylesheet" href="../assets/css/empty-state.css">
+    <link rel="stylesheet" href="../assets/css/navbar.css">
 </head>
 
 <body>
@@ -39,56 +40,75 @@
 
     <p>This is my first UI library.</p>
 
-    <div class="ui-empty-state">
+    <nav class="ui-navbar">
 
-        <div
-            class="ui-empty-state-icon"
-            aria-hidden="true">
-            📄
-        </div>
+        <a
+            href="#"
+            class="ui-navbar-brand">
+            PHP UI
+        </a>
 
-        <h2 class="ui-empty-state-title">
-            No exams yet
-        </h2>
+        <button
+            type="button"
+            class="ui-navbar-toggle"
+            data-ui-navbar-toggle
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            ☰
+        </button>
 
-        <p class="ui-empty-state-description">
-            You haven't created any exams yet.
-            Create your first exam to get started.
-        </p>
+        <ul class="ui-navbar-nav">
 
-        <div class="ui-empty-state-actions">
+            <li>
+                <a
+                    href="#"
+                    class="ui-navbar-link ui-navbar-link-active">
+                    Dashboard
+                </a>
+            </li>
 
-            <button class="ui-button ui-button-primary">
-                Create Exam
+            <li>
+                <a
+                    href="#"
+                    class="ui-navbar-link">
+                    Exams
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="#"
+                    class="ui-navbar-link">
+                    Users
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="#"
+                    class="ui-navbar-link">
+                    Settings
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="ui-navbar-actions">
+
+            <button class="ui-button ui-button-primary ui-button-sm">
+                Login
             </button>
 
         </div>
 
-    </div>
-
-    <div class="ui-empty-state">
-
-        <div
-            class="ui-empty-state-icon"
-            aria-hidden="true">
-            🔍
-        </div>
-
-        <h2 class="ui-empty-state-title">
-            No results found
-        </h2>
-
-        <p class="ui-empty-state-description">
-            We couldn't find anything matching your search.
-        </p>
-
-    </div>
+    </nav>
 
 
     <script src="../assets/js/modal.js"></script>
     <script src="../assets/js/dropdown.js"></script>
     <script src="../assets/js/toast.js"></script>
     <script src="../assets/js/tabs.js"></script>
+    <script src="../assets/js/navbar.js"></script>
 </body>
 
 </html>

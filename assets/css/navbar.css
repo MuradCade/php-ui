@@ -1,0 +1,125 @@
+.ui-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--ui-space-4);
+
+    min-height: 4rem;
+    padding: 0 var(--ui-space-6);
+
+    background-color: var(--ui-color-background);
+    border-bottom: 1px solid var(--ui-color-border);
+}
+
+.ui-navbar-brand {
+    display: inline-flex;
+    align-items: center;
+
+    color: var(--ui-color-text);
+
+    font-size: var(--ui-font-size-lg);
+    font-weight: 600;
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+.ui-navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--ui-space-2);
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.ui-navbar-link {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 0.5rem 0.75rem;
+
+    border-radius: var(--ui-radius-md);
+
+    color: var(--ui-color-text-muted);
+
+    font-size: var(--ui-font-size-sm);
+    text-decoration: none;
+
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease;
+}
+
+.ui-navbar-link:hover {
+    background-color: var(--ui-color-background-muted);
+    color: var(--ui-color-text);
+}
+
+.ui-navbar-link-active {
+    background-color: var(--ui-color-background-muted);
+    color: var(--ui-color-primary);
+}
+
+.ui-navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--ui-space-3);
+}
+
+.ui-navbar-toggle {
+    display: none;
+
+    padding: 0.5rem;
+
+    border: 1px solid var(--ui-color-border);
+    border-radius: var(--ui-radius-md);
+
+    background: var(--ui-color-background);
+    color: var(--ui-color-text);
+
+    cursor: pointer;
+}
+
+.ui-navbar-toggle:focus-visible {
+    outline: 2px solid var(--ui-color-primary);
+    outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+    .ui-navbar {
+        flex-wrap: wrap;
+        padding: 0 var(--ui-space-4);
+    }
+
+    .ui-navbar-toggle {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ui-navbar-nav {
+        display: none;
+
+        width: 100%;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        padding-bottom: var(--ui-space-4);
+    }
+
+    .ui-navbar-nav.ui-navbar-nav-open {
+        display: flex;
+    }
+
+    .ui-navbar-link {
+        width: 100%;
+    }
+
+    .ui-navbar-actions {
+        margin-left: auto;
+    }
+}
