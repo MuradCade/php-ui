@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="../assets/css/toast.css">
     <link rel="stylesheet" href="../assets/css/tabs.css">
     <link rel="stylesheet" href="../assets/css/accordion.css">
+    <link rel="stylesheet" href="../assets/css/tooltip.css">
 </head>
 
 <body>
@@ -31,49 +32,18 @@
     <h1>PHP UI</h1>
 
     <p>This is my first UI library.</p>
-    <div class="ui-accordion">
+    <div class="ui-tooltip">
 
-        <details class="ui-accordion-item" open>
+        <button
+            type="button"
+            class="ui-button ui-button-danger"
+            aria-label="Delete exam">
+            Delete
+        </button>
 
-            <summary class="ui-accordion-header">
-                General
-            </summary>
-
-            <div class="ui-accordion-content">
-                <p>
-                    Configure the exam title, duration and status.
-                </p>
-            </div>
-
-        </details>
-
-        <details class="ui-accordion-item">
-
-            <summary class="ui-accordion-header">
-                Questions
-            </summary>
-
-            <div class="ui-accordion-content">
-                <p>
-                    Add and manage questions for this exam.
-                </p>
-            </div>
-
-        </details>
-
-        <details class="ui-accordion-item">
-
-            <summary class="ui-accordion-header">
-                Participants
-            </summary>
-
-            <div class="ui-accordion-content">
-                <p>
-                    Manage the participants who can take the exam.
-                </p>
-            </div>
-
-        </details>
+        <span class="ui-tooltip-content">
+            Delete this exam
+        </span>
 
     </div>
 
