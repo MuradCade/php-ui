@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="../assets/css/pagination.css">
     <link rel="stylesheet" href="../assets/css/spinner.css">
     <link rel="stylesheet" href="../assets/css/skeleton.css">
+    <link rel="stylesheet" href="../assets/css/progress.css">
 </head>
 
 <body>
@@ -37,20 +38,12 @@
 
     <p>This is my first UI library.</p>
 
-    <span
-        class="ui-spinner"
-        aria-label="Loading"></span>
-    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-
-        <div class="ui-skeleton ui-skeleton-title"></div>
-
-        <div class="ui-skeleton ui-skeleton-text"></div>
-
-        <div class="ui-skeleton ui-skeleton-button"></div>
-
-        <div class="ui-skeleton ui-skeleton-text-sm"></div>
-
+    <div class="ui-progress">
+        <div
+            class="ui-progress-bar"
+            style="width: 60%;"></div>
     </div>
+
     <script src="../assets/js/modal.js"></script>
     <script src="../assets/js/dropdown.js"></script>
     <script src="../assets/js/toast.js"></script>
