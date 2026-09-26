@@ -1,0 +1,49 @@
+/* Form container */
+.ui-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ui-space-5);
+}
+
+/* Form field */
+.ui-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ui-space-2);
+}
+
+/* Form actions */
+.ui-form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: var(--ui-space-3);
+    margin-top: var(--ui-space-2);
+}
+
+/* Full-width form actions */
+.ui-form-actions-start {
+    justify-content: flex-start;
+}
+
+/* Form section */
+.ui-form-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--ui-space-4);
+}
+
+/* Form section title */
+.ui-form-section-title {
+    margin: 0;
+    font-size: var(--ui-font-size-lg);
+    font-weight: 600;
+    color: var(--ui-color-text);
+}
+
+/* Form section description */
+.ui-form-section-description {
+    margin: 0;
+    font-size: var(--ui-font-size-sm);
+    color: var(--ui-color-text-muted);
+}
