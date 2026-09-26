@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="../assets/css/tabs.css">
     <link rel="stylesheet" href="../assets/css/accordion.css">
     <link rel="stylesheet" href="../assets/css/tooltip.css">
+    <link rel="stylesheet" href="../assets/css/table.css">
 </head>
 
 <body>
@@ -32,18 +33,55 @@
     <h1>PHP UI</h1>
 
     <p>This is my first UI library.</p>
-    <div class="ui-tooltip">
 
-        <button
-            type="button"
-            class="ui-button ui-button-danger"
-            aria-label="Delete exam">
-            Delete
-        </button>
+    <div class="ui-table-wrapper">
 
-        <span class="ui-tooltip-content">
-            Delete this exam
-        </span>
+        <table class="ui-table ui-table-compact ui-table-bordered">
+
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>1</td>
+                    <td>PHP Basics</td>
+                    <td>
+                        <span class="ui-badge ui-badge-success">
+                            Published
+                        </span>
+                    </td>
+                    <td>
+                        <button class="ui-button ui-button-sm">
+                            Edit
+                        </button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Laravel Basics</td>
+                    <td>
+                        <span class="ui-badge ui-badge-warning">
+                            Draft
+                        </span>
+                    </td>
+                    <td>
+                        <button class="ui-button ui-button-sm">
+                            Edit
+                        </button>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
 
     </div>
 
