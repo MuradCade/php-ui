@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../assets/css/textarea.css">
     <link rel="stylesheet" href="../assets/css/select.css">
     <link rel="stylesheet" href="../assets/css/checkbox.css">
+    <link rel="stylesheet" href="../assets/css/radio.css">
 </head>
 
 <body>
@@ -23,46 +24,37 @@
     <h1>PHP UI</h1>
 
     <p>This is my first UI library.</p>
-    <div>
-        <label class="ui-checkbox-wrapper">
-            <input
-                class="ui-checkbox"
-                type="checkbox"
-                name="settings[]"
-                value="shuffle">
-            <span class="ui-checkbox-label">
-                Shuffle questions
-            </span>
-        </label>
-    </div>
+    <fieldset class="ui-radio-group">
+        <legend class="ui-label">Question Type</legend>
 
-    <div>
-        <label class="ui-checkbox-wrapper">
+        <label class="ui-radio-wrapper">
             <input
-                class="ui-checkbox"
-                type="checkbox"
-                name="settings[]"
-                value="timer"
+                class="ui-radio"
+                type="radio"
+                name="question_type"
+                value="single_choice"
                 checked>
-            <span class="ui-checkbox-label">
-                Enable exam timer
-            </span>
+            <span class="ui-radio-label">Single Choice</span>
         </label>
-    </div>
 
-    <div>
-        <label class="ui-checkbox-wrapper">
+        <label class="ui-radio-wrapper">
             <input
-                class="ui-checkbox"
-                type="checkbox"
-                name="settings[]"
-                value="results"
-                disabled>
-            <span class="ui-checkbox-label">
-                Show results immediately
-            </span>
+                class="ui-radio"
+                type="radio"
+                name="question_type"
+                value="true_and_false">
+            <span class="ui-radio-label">True and False</span>
         </label>
-    </div>
+
+        <label class="ui-radio-wrapper">
+            <input
+                class="ui-radio"
+                type="radio"
+                name="question_type"
+                value="direct_question">
+            <span class="ui-radio-label">Direct Question</span>
+        </label>
+    </fieldset>
 
 </body>
 
